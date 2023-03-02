@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Подстраница 4</title>
+  </head>
+  <body style="background: url(../images/geralt.jpg) center center / cover no-repeat;">
+    <header>
+      <div class="container">
+        <div class="header-body">
+          <h1><a href="../index.html"><i>Главная</i></a></h1>
+          <nav class="header-nav">
+            <!--Неупорядоченный список-->
+            <ul class="header-list">
+              <li class="header-item">
+                <a href="../otchet.html" class="header-link">Отчет</a>
+              </li>
+              <li class="header-item">
+                <a href="../2.html" class="header-link">Dog</a>
+              </li>
+              <li class="header-item">
+                <a href="../3.html" class="header-link">Cat</a>
+              </li>
+              <li class="header-item">
+                <a href="../4.html" class="header-link">Monke</a>
+              </li>
+              <li class="header-item">
+                <a href="../5.html" class="header-link">Negro</a>
+              </li>
+              <li class="header-item">
+                <a href="../6.html" class="header-link">Lightskin stare</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div style="text-align: center;" class="main-body">
+          <img height="600" src="../images/LetoIzGuleti.jpg" alt="leto">
+          <h2 style="margin: 20px 0;">Honorable Mention 4: Leto Iz Katleti</h2>
+          <button id="playButton">Play</button>
+        </div>
+        <!--Упорядоченный список-->
+        <ol class="main-sublist">
+          <li class="main-subitem">
+            <a href="sub1.html" class="main-sublink">Arabic Patrick Bateman</a>
+          </li>
+          <li class="main-subitem">
+            <a href="sub2.html" class="main-sublink">China Chahotka</a>
+          </li>
+          <li class="main-subitem">
+            <a href="sub3.html" class="main-sublink active">El Prima</a>
+          </li>
+          <li class="main-subitem">
+            <a href="sub4.html" class="main-sublink"><b>Leto</b></a>
+          </li>
+          <li class="main-subitem">
+            <a href="sub5.html" class="main-sublink">Вечная память</a>
+          </li>
+        </ol>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="footer-body">
+          <dl>
+            <dt>Права</dt>
+            <dd>Никакие права не защищены&copy;</dd>
+            <dt>ФИО</dt>
+            <dd>Кузьмин Евгений Дмитриевич</dd>
+            <dt>Группа</dt>
+            <dd>ИЗ-21</dd>
+          </dl>
+        </div>
+      </div>
+    </footer>
+    <script>
+      const audio = new Audio('../audio/wither.mp3')
+      const button = document.getElementById('playButton')
+
+      button.onclick = function() {
+        audio.play()
+      }
+    </script>
+  </body>
+</html>

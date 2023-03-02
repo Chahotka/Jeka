@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Кузьмин Евгений Дмитриевич">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Главная</title>
+  </head>
+  <body>
+    <header id="header">
+      <div class="container">
+        <div class="header-body">
+          <h1><a href="index.html"><b><i>Главная</i></b></a></h1>
+          <nav class="header-nav">
+            <ul class="header-list">
+              <li class="header-item">
+                <a href="otchet.html" class="header-link" target="_blank">Отчет</a>
+              </li>
+              <li class="header-item">
+                <a href="2.html" class="header-link">Dog</a>
+              </li>
+              <li class="header-item">
+                <a href="3.html" class="header-link">Monke</a>
+              </li>
+              <li class="header-item">
+                <a href="4.html" class="header-link">Negro</a>
+              </li>
+              <li class="header-item">
+                <a href="5.html" class="header-link">Lightskin stare</a>
+              </li>
+              <li class="header-item">
+                <button id="buttonBottom">Прокрутить к концу</button>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="main-body">
+          <h2>Ссылки через картинки</h2>
+          <br>
+          <img style="text-align: center;" class="map-img" src="images/jekaStanding.jpg" alt="Jeka boevaya stoika" usemap="#march">
+          <map name="march">
+            <area shape="rect" coords="170, 120, 260, 60" href="https://www.wildberries.ru/catalog/17644694/detail.aspx" title="Шампунь для самых брутальных парней" target="_blank">
+            <area shape="rect" coords="200, 150, 270, 120" href="https://www.wildberries.ru/catalog/98882538/detail.aspx" title="Украшение для глаз хищника" target="_blank">
+            <area shape="rect" coords="140, 185, 270, 450"  href="https://www.avito.ru/nizhniy_novgorod/odezhda_obuv_aksessuary/trusy_semeyniki_2387838267" title='Дешево и сердито кажуал трусы "Казанова"' target="_blank">
+            <area shape="rect" coords="190, 500, 300, 610" href="https://www.avito.ru/moskva/odezhda_obuv_aksessuary/podkradulka_zubastyy_akuliy_zhes_2840545818" title="Оригинальные педали ограниченной серии от всемирно известного бренда Armani Jeans" target="_blank">
+          </map>
+        </div>
+        <div>
+          <p>
+            Здесь используется абсолютная единица измерения а именно пиксели,
+            так же используется выравнивание по верхнему краю и эта картинка является ссылкой если навести
+            мышь на картинку можно увидеть значение атрибута title и target со значением _blank
+            <a target="_blank" href="https://www.wildberries.ru/catalog/33569583/detail.aspx">
+              <img textop class="link-img" title='Нажав на картинку можно перейти на сайт приобретения понтовых наушников для настоящих мужиков' src="jekaSexBomba.jpg" alt="jekaSexBomba">
+            </a>
+          </p>
+        </div>
+        <br>
+        <div>
+          <p>
+            Здесь же используется относительная единица измерения: проценты,
+            тут используется выравнивание по верхним выступающим элементам букв в строке.
+            <img middle class="percent-img" src="jekaSexBomba.jpg" alt="jekaSexBomba">
+          </p>
+          <p>Вывод: при использовании относительных единиц картинка, при изменении размеров окна браузера подстраивается под новый размер</p>
+          <p>При использовании абсолютных единиц картинка не меняет своих размеров и может вылезать за рамки окна браузера</p>
+        </div>
+        <br>
+        <br>
+        <div>
+          <p>Тут используется атрибут alt который показвает текстовую запись в случае если картинку не удалось загрузить</p>
+          <img src="brokenulr.jpg" alt="Использовние атрибута alt">
+        </div>
+        <br>
+        <br>
+        <h2>Загрузка файла</h2>
+        <a href="./Архив WinRAR.rar"></a>
+        <br>
+        <br>
+        <h2>Отправка письма</h2>
+        <a href="mailto:vor273510@gmail.com">Для отправки жать сюда</a>
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="container">
+        <div class="footer-body">
+          <dl>
+            <dt>Права</dt>
+            <dd>Никакие права не защищены&copy;</dd>
+            <dt>ФИО</dt>
+            <dd>Кузьмин Евгений Дмитриевич</dd>
+            <dt>Группа</dt>
+            <dd>ИЗ-21</dd>
+          </dl>
+          <button id="buttonTop">Прокрутить к верху</button>
+        </div>
+        <a href="0.html">Ссылка с перенаправлением</a>
+      </div>
+    </footer>
+    
+    <script>
+      const buttonBottom = document.getElementById('buttonBottom');
+      const buttonTop = document.getElementById('buttonTop');
+      const header = document.getElementById('header');
+      const footer = document.getElementById('footer')
+
+    buttonBottom.onclick = function() {
+      footer.scrollIntoView({behavior: "smooth"})
+    }
+    buttonTop.onclick = function() {
+      header.scrollIntoView({behavior: "smooth"})
+    }
+    </script>
+  </body>
+</html>

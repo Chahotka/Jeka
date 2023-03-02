@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Подстраница 4</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-body">
+          <h1><a href="../index.html"><i>Главная</i></a></h1>
+          <nav class="header-nav">
+            <!--Неупорядоченный список-->
+            <ul class="header-list">
+              <li class="header-item">
+                <a href="../otchet.html" class="header-link">Отчет</a>
+              </li>
+              <li class="header-item">
+                <a href="../2.html" class="header-link">Dog</a>
+              </li>
+              <li class="header-item">
+                <a href="../3.html" class="header-link">Cat</a>
+              </li>
+              <li class="header-item">
+                <a href="../4.html" class="header-link">Monke</a>
+              </li>
+              <li class="header-item">
+                <a href="../5.html" class="header-link">Negro</a>
+              </li>
+              <li class="header-item">
+                <a href="../6.html" class="header-link">Lightskin stare</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div style="text-align: center;" class="main-body">
+          <div style="display: flex; flex-direction: column;">
+            <div>
+              <img height="600" src="../images/jeka.jpg" alt="jeka">
+              <p style="margin: 10px 0 0 0;">Vorogo: пожилая тортила</p>
+            </div>
+            <div style="margin: 100px 0 0 0">
+              <img height="600" src="../images/arslan.jpg" alt="arslan">
+              <p style="margin: 10px 0 0 0;">Chahotka: Биологическая угроза</p>
+            </div>
+            <div style="margin: 100px 0 0 0">
+              <img height="600" src="../images/artur.jpg" alt="artur">
+              <p style="margin: 10px 0 0 0;">СилаШтанов: Потерял штаны(</p>
+            </div>
+            <div style="margin: 100px 0 0 0">
+              <img height="600" src="../images/sanya.jpg" alt="sanya">
+              <p style="margin: 10px 0 0 0;">Tikan: Пожилой лудоман</p>
+            </div>
+          </div>
+
+          <h2 style="margin: 20px 0;">Honorable Mention 5: Вечная память погибшим героями</h2>
+          <button id="playButton">Play</button>
+        </div>
+        <!--Упорядоченный список-->
+        <ol class="main-sublist">
+          <li class="main-subitem">
+            <a href="sub1.html" class="main-sublink">Arabic Patrick Bateman</a>
+          </li>
+          <li class="main-subitem">
+            <a href="sub2.html" class="main-sublink">China Chahotka</a>
+          </li>
+          <li class="main-subitem">
+            <a href="sub3.html" class="main-sublink active">El Prima</a>
+          </li>
+          <li class="main-subitem">
+            <a href="sub4.html" class="main-sublink">Leto</a>
+          </li>
+          <li class="main-subitem">
+            <a href="sub5.html" class="main-sublink"><b>Вечная память</b></a>
+          </li>
+        </ol>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="footer-body">
+          <dl>
+            <dt>Права</dt>
+            <dd>Никакие права не защищены&copy;</dd>
+            <dt>ФИО</dt>
+            <dd>Кузьмин Евгений Дмитриевич</dd>
+            <dt>Группа</dt>
+            <dd>ИЗ-21</dd>
+          </dl>
+        </div>
+      </div>
+    </footer>
+    <script>
+      const audio = new Audio('../audio/voina.mp3')
+      const button = document.getElementById('playButton')
+
+      button.onclick = function() {
+        audio.play()
+      }
+    </script>
+  </body>
+</html>
